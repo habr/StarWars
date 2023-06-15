@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SWAPI Search</title>
+</head>
+<body>
+    <form method="POST">
+        <input type="text" name="search" placeholder="Введите имя персонажа, планету или корабль">
+        <input type="submit" value="Поиск">
+    </form>
+    <ul>
+        {% for item in data %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
